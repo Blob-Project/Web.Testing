@@ -11,12 +11,21 @@
 	<div id="wrapper">
 
 
-<!-----------use form as container------>
-<form action="" method="post" id="chat-submit-form">
-    <input type="text" placeholder="Name (optional)" class="chat_submit_name">
-    <input type="submit" value="Send" class="chat-submit-submit">
-    <textarea placeholder="Message" class="chat-submit-message"></textarea>
-</form>
+            <!-----------use form as container------>
+        <form action="" method="post" id="chat-submit-form">
+            <input type="text" placeholder="Name (optional)" class="chat_submit_name">
+            <input type="submit" value="Send" class="chat-submit-submit">
+            <textarea placeholder="Message" class="chat-submit-message"></textarea>
+        </form>
+        <div class="chat-comments-container">
+            <!--------------------------------some php to get the comments. for each coment add one of these...........-------->
+            <div class="chat-comments-comment">
+                <div class="chat-comments-time"><p><!--time using php--></p></div>
+                <div class="chat-comments-name"><p><!--name using php or anonymous--></p></div>
+                <div class="chat-comments-message"><p><!--message, again using php--></p></div>
+            </div>
+            <!-----end of loop------>
+        </div>
 
 		<footer>
 			<p><span class="credit"> The Web Project </span></p>
